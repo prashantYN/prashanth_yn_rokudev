@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roku Developer Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b0b0c;
+            color: #ffffff;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #4b2bb6, #0b0b0c);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.4rem;
+            opacity: 0.8;
+        }
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        h2 {
+            border-left: 6px solid #8c52ff;
+            padding-left: 15px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background: #1b1b1e;
+            padding: 10px 18px;
+            border: 1px solid #8c52ff;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        /* Project Cards */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #1a1a1d;
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        .card:hover {
+            border-color: #8c52ff;
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card a {
+            color: #8c52ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.1rem;
+            border-top: 1px solid #333;
+        }
+        footer a {
+            color: #8c52ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+        <h1>Hi, I'm Prashanth YN</h1>
+        <p>Roku Developer | BrightScript | OTT App Specialist</p>
+    </header>
+
+    <div class="container">
+
+        <!-- ABOUT -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                I build high-performance Roku streaming applications using BrightScript and SceneGraph.
+                I specialize in UI/UX development, subscription systems, OTT integrations, and Roku certification-ready apps.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="tag">BrightScript</span>
+                <span class="tag">SceneGraph</span>
+                <span class="tag">Roku UI/UX</span>
+                <span class="tag">Video Player Node</span>
+                <span class="tag">RAF Ads Integration</span>
+                <span class="tag">Authentication (JWT)</span>
+                <span class="tag">JSON API Integration</span>
+                <span class="tag">Git / CLI Debugging</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section">
+            <h2>Showcase Projects</h2>
+            <div class="projects">
+
+                <div class="card">
+                    <h3>MiniStream Player</h3>
+                    <p>A basic Roku streaming app with custom playback controls and a simple content library.</p>
+                    <a href="#">🔗 GitHub Repo</a> &nbsp; | &nbsp; <a href="#">▶ Demo Video</a>
+                </div>
+
+                <div class="card">
+                    <h3>MovieBox (Netflix UI)</h3>
+                    <p>
+                        A dynamic Roku streaming interface fetching remote JSON content with grid view.
+                    </p>
+                    <a href="#">🔗 GitHub Repo</a> &nbsp; | &nbsp; <a href="#">▶ Demo Video</a>
+                </div>
+
+                <div class="card">
+                    <h3>StreamPlus Premium</h3>
+                    <p>
+                        A subscription-based Roku app with login, auth system, and premium content.
+                    </p>
+                    <a href="#">🔗 GitHub Repo</a> &nbsp; | &nbsp; <a href="#">▶ Demo Video</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section">
+            <h2>Contact</h2>
+            <p>If you'd like to hire me or collaborate, feel free to reach out.</p>
+            <p>📩 <b>Email:</b> <a href="prash.winner@gmail.com">prash.winner@gmail.com</a></p>
+            <p>🔗 LinkedIn | GitHub | Upwork (links go here)</p>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Prashanth YN — Roku Developer Portfolio
+    </footer>
+
+</body>
+</html>
