@@ -32,17 +32,6 @@ header p {
     max-width: 1200px;
     margin: auto;
 }
-.section {
-    padding: 40px 0;
-    text-align: left;
-}
-h2 {
-    border-left: 6px solid #8c52ff;
-    padding-left: 15px;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-}
 
 .tag {
     background: #f0f0f0;
@@ -64,10 +53,7 @@ h2 {
     width: 100%;
     position: relative;
 }
-.carousel-track {
-    display: flex;
-    animation: scroll 30s linear infinite;
-}
+
 .carousel-track.paused {
     animation-play-state: paused;
 }
@@ -256,7 +242,8 @@ html {
 
 .carousel-track {
     display: flex;
-    animation: scroll 40s linear infinite;
+    padding: 20px;
+    animation: scroll 10s linear infinite;
 }
 
 .carousel-track.paused {
@@ -500,3 +487,28 @@ html {
     }
 }
 
+.section {
+    padding: 2.25rem 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    color: var(--text-primary, #111);  
+}
+
+/* Accent underline */
+.section h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+     width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #6a5acd, #00bcd4);
+}
